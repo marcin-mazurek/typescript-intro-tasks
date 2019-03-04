@@ -1,0 +1,23 @@
+{
+  "name": "typescript-intro-tasks",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "rm -f ./mocha.opts && cp ./mocha.opts.tpl ./mocha.opts",
+    "test": "tsc --noEmit && mocha --opts mocha.opts",
+    "enable-task-2": "echo 'task-2/**/*.test.ts' >> mocha.opts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "ts-node": "^8.0.2"
+  },
+  "dependencies": {
+    "typescript": "^3.3.3333"
+  }
+}
