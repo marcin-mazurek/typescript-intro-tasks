@@ -1,4 +1,4 @@
-import User from './User';
+import User, { BaseUser } from './User';
 import { describe, it } from 'mocha';
 import { expect } from 'chai';
 
