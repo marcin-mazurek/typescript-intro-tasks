@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "rm -f ./mocha.opts && cp ./mocha.opts.tpl ./mocha.opts",
+    "postinstall": "rm -f ./mocha.opts && cp ./mocha.opts.tpl ./mocha.opts && rm -f ./tsconfig.json && cp ./tsconfig.json.tpl ./tsconfig.json",
     "test": "tsc --noEmit && mocha --opts mocha.opts",
-    "enable-task-2": "echo 'task-2/**/*.test.ts' >> mocha.opts"
+    "enable-task-2": "node ./enableTask.js 2",
+    "enable-task-3": "node ./enableTask.js 3"
   },
   "author": "",
   "license": "ISC",

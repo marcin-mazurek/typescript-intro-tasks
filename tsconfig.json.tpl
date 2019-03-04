@@ -9,8 +9,5 @@
     "target": "es5",
     "allowJs": true
   },
-  "include": [
-    "./task-1-solution/**/*.ts",
-    "./task-2-solution/**/*.ts"
-  ]
+  "include": ["./task-1/**/*.ts"]
 }
