@@ -1,4 +1,4 @@
-import greet from './greet';
+import { greet } from './greet';
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 

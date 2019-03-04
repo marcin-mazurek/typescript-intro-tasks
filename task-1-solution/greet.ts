@@ -1,5 +1,11 @@
-function hello(name: string): string {
+export function greet(name: string): string {
   return `Hello ${name}!`;
 }
 
-export default hello;
+export function add(a: number, b: number): number {
+  return a + b;
+}
+
+export function isEven(a: number): boolean {
+  return (a % 2 === 0);
+}

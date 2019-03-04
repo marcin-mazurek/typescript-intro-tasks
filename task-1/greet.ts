@@ -1,5 +1,3 @@
-function hello(name) {
+export function greet(name) {
   return `Hello ${name}!`;
 }
-
-export default hello;
